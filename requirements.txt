@@ -1,0 +1,28 @@
+# Pinned to the versions this project is known to run on (Python 3.9).
+# Transitive dependencies (langchain-core, langchain-text-splitters, ...)
+# are resolved automatically and intentionally not pinned here.
+
+# Agent orchestration
+langgraph==0.6.11
+
+# RAG: loaders, splitters, vector store, embeddings
+langchain==0.3.28
+langchain-community==0.3.31
+langchain-ollama==0.3.10
+chromadb==1.5.7
+
+# Backs PyPDFLoader; langchain does not pull it in automatically
+pypdf==6.14.2
+
+# Local LLM client (code + test generation)
+ollama==0.6.1
+
+# Web UI
+streamlit==1.50.0
+
+# Runs the generated tests in a subprocess
+pytest==8.4.2
+
+# GitHub push + .env loading
+PyGithub==2.9.1
+python-dotenv==1.2.1

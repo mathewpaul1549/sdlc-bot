@@ -1,0 +1,1 @@
+The system should calculate invoice totals for a list of line items. Each line item has a unit price and a quantity. The invoice total must apply VAT at 20 percent to the subtotal. Invoice numbers are sequential integers starting at 1000. If the line item list is empty the total should be zero.

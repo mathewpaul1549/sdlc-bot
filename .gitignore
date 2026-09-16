@@ -1,0 +1,36 @@
+# Secrets — the '.env*' glob also catches strays like '.env copy'
+.env*
+!.env.example
+credentials.json
+service-account*.json
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# Local vector store (regenerated on first upload)
+chroma_db/
+src/chroma_db/
+
+# Model files
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.onnx
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Runtime scratch
+src/temp_upload_*
+temp_upload_*
+generated/
